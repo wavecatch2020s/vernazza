@@ -1,0 +1,170 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  width: 100vw;
+  background: #eff7f6;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  user-select: none;
+}
+
+button {
+  font-family: "Quicksand", sans-serif;
+
+  &.a1 {
+    padding: 0.4rem 3rem;
+    font-size: 1.2rem;
+    height: 48px;
+    color: #131313 !important;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+      box-shadow: -2px 2px 5px rgba(104, 104, 104, 0.352);
+    }
+    &.small {
+      height: 36px;
+      border-radius: 18px;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+    &.meal-item {
+      width: 100px;
+      text-align: center;
+      padding: 0;
+      height: 36px;
+      position: absolute;
+      right: 0;
+    }
+    &.yellow {
+      background-color: #ffca69;
+    }
+    &.cancel {
+      background-color: #fff;
+      border: 1px solid #a09f9f;
+    }
+    &.green {
+      background-color: #b2f7ef;
+      width: 180px;
+    }
+  }
+}
+
+.App {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  main {
+    background-image: url("../components/assets/hero-image.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 2rem;
+  }
+}
+
+.card {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 1.5rem;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.7);
+  border-radius: 20px;
+  border: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px !important;
+    h1 {
+      font-size: 1.5rem !important;
+    }
+    h2 {
+      display: none !important;
+    }
+  }
+
+  .card {
+    width: 95%;
+  }
+  .meals-list {
+    padding: 15px !important;
+    section {
+      margin-top: 0 !important;
+      h1 {
+        padding: 0 !important;
+      }
+    }
+    .left-side {
+      h3 {
+        font-size: 1.1rem !important;
+      }
+      span {
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+  .category {
+    font-size: 1rem !important;
+  }
+  form {
+    .input-box {
+      flex-direction: column !important;
+      height: 90px !important;
+      width: 90px !important;
+      input {
+        width: 90px !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        text-align: center;
+        padding: 0 !important;
+        border: none !important;
+      }
+      button {
+        position: relative !important;
+        width: 90px !important;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+      }
+    }
+  }
+}
+
+@import "./header.scss";
+@import "./mealcategories";
+@import "./meals-list";
+@import "./modal";
+@import "./cart";
+@import "./customerform";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");

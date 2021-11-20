@@ -1,0 +1,43 @@
+.meal-categories {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 1rem 0;
+  color: rgba(51, 51, 51, 0.487);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1.2rem 0 0 0;
+  border-radius: 25px 25px 0 0;
+  margin: 0;
+
+  li.category {
+    font-size: 1.2rem;
+    flex: 1;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    transition: all 0.5s;
+    border-bottom: 3px solid #f4f4f4;
+
+    &:hover {
+      color: rgba(51, 51, 51, 0.9);
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &.highlighted {
+      color: rgba(51, 51, 51, 0.85);
+      border-bottom: 3px solid #b2f7ef;
+    }
+  }
+  li.category:first-child {
+    padding-left: 1.1rem;
+  }
+  li.category:last-child {
+    padding-right: 1.1rem;
+  }
+}

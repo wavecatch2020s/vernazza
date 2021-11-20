@@ -1,0 +1,83 @@
+.meals-list {
+  padding: 32px;
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+
+    ul {
+      width: 100%;
+      list-style: none;
+      margin: 0 1.5rem;
+
+      .meal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid #b8b8b8;
+
+        .left-side {
+          margin-right: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          h3 {
+            padding-bottom: 0.5rem;
+            font-size: 1.3rem;
+          }
+
+          .description {
+            padding-bottom: 0.5rem;
+          }
+          .price {
+            font-size: 1.3rem;
+            font-weight: 500;
+          }
+        }
+
+        form {
+          .input-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            width: 180px;
+            border-radius: 5px;
+            height: 32px;
+            border: none;
+            input {
+              width: 55%;
+              border: 1px solid #ccc;
+              font: inherit;
+              padding-left: 2.5rem;
+              padding-right: 1.5rem;
+              font-size: 1.2rem;
+              border-bottom-left-radius: 18px;
+              border-top-left-radius: 18px;
+              height: 36px;
+            }
+            label {
+              font-weight: bold;
+            }
+
+            .added-to-cart {
+              margin-left: 1rem;
+              color: #333;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
