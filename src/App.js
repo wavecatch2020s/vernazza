@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import Card from "./components/UI/Card";
 import MealCategories from "./components/Menu/MealCategories";
 import MealsList from "./components/Menu/MealsList";
-import { fetchMeals } from "./redux/fetch-actions";
+import { fetchMeals } from "./fetch-actions/fetch-actions";
 import Cart from "./components/Cart/Cart";
 import CustomerForm from "./components/Cart/CustomerForm";
 import OrderSuccess from "./components/Cart/OrderSuccess";

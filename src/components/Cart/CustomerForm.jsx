@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { uiActions } from "../../redux/ui-slice";
 import { cartActions } from "../../redux/cart-slice";
 import useInput from "../../hooks/use-input";
-import { submitOrderData } from "../../redux/fetch-actions";
+import { submitOrderData } from "../../fetch-actions/submit-order-data";
 
 const CustomerForm = () => {
   const dispatch = useDispatch();
