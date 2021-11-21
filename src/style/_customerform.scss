@@ -83,6 +83,10 @@
         &:last-child {
           margin-left: 24px;
         }
+
+        &.disabled {
+          opacity: 0.5;
+        }
       }
     }
   }

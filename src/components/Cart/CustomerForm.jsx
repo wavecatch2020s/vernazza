@@ -192,7 +192,11 @@ const CustomerForm = () => {
             <button onClick={closeModalOnClick} className="a1 cancel">
               Cancel
             </button>
-            <button className="a1 yellow" type="submit" disabled={!formIsValid}>
+            <button
+              className={`a1 yellow ${!formIsValid && "disabled"}`}
+              type="submit"
+              disabled={!formIsValid}
+            >
               Finish Order
             </button>
           </div>
