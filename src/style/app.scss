@@ -15,6 +15,15 @@ body {
   user-select: none;
 }
 
+input,
+textarea {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 button {
   font-family: "Quicksand", sans-serif;
 

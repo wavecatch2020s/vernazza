@@ -34,6 +34,7 @@ const Cart = () => {
 
   const cartJSX = (
     <Fragment>
+      <h1 className="cart-title">Cart Items</h1>
       <div className="cart-items-list">{cartList}</div>
       <div className="total-order">
         <div className="total-amount">
